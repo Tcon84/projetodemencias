@@ -102,7 +102,7 @@ nav a:hover {
 section {
     padding: 30px;
     background-color: white;
-    margin: 100px auto 40px auto;
+    margin: 120px auto 40px auto;
     border-radius: 16px;
     max-width: 800px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -136,4 +136,9 @@ body::after {
     background-position: center;
     opacity: 0.1;
     z-index: -1;
+}
+
+/* Ensure content isn't hidden behind fixed header */
+body {
+    padding-top: 100px;
 }
