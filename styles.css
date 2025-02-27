@@ -9,6 +9,9 @@ body {
 
 /* Header styles */
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #005a8d;
     color: white;
     padding: 40px 20px;
@@ -16,6 +19,7 @@ header {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 1px;
+    z-index: 1000;
 }
 
 /* Navigation styling */
@@ -98,7 +102,7 @@ nav a:hover {
 section {
     padding: 30px;
     background-color: white;
-    margin: 40px auto;
+    margin: 100px auto 40px auto;
     border-radius: 16px;
     max-width: 800px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
