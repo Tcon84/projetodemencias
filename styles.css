@@ -12,7 +12,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #005a8d;
+    background: linear-gradient(145deg, #005a8d, #007bbd);
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -20,6 +20,8 @@ header {
     font-weight: bold;
     letter-spacing: 1px;
     z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #4CAF50;
 }
 
 /* Navigation styling */
@@ -102,7 +104,7 @@ nav a:hover {
 section {
     padding: 30px;
     background-color: white;
-    margin: 180px auto 40px auto;
+    margin: 160px auto 40px auto;
     border-radius: 16px;
     max-width: 800px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -140,5 +142,5 @@ body::after {
 
 /* Ensure content isn't hidden behind fixed header */
 body {
-    padding-top: 160px;
+    padding-top: 140px;
 }
