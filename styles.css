@@ -109,6 +109,7 @@ section {
     max-width: 800px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    text-align: justify;
 }
 
 section:hover {
