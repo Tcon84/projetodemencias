@@ -143,18 +143,18 @@ body::after {
 
 /* Ensure content isn't hidden behind fixed header */
 body {
-    padding-top: 140px;
+    padding-top: 120px;
 }
 
 /* Image styling */
 .image-item {
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .image-item img {
     width: 100%;
-    max-width: 960px;
+    max-width: 800px;
     border: 5px solid #4CAF50;
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
