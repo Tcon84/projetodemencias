@@ -143,7 +143,7 @@ body::after {
 
 /* Ensure content isn't hidden behind fixed header */
 body {
-    padding-top: 120px;
+    padding-top: 90px !important;
 }
 
 /* Image styling */
