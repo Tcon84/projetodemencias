@@ -118,7 +118,7 @@ section:hover {
 
 /* Reduce space above the first section */
 section:first-of-type {
-    margin-top: 40px !important;
+    margin-top: 80px !important;
 }
 
 /* Footer styling */
