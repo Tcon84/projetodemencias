@@ -116,6 +116,11 @@ section:hover {
     transform: scale(1.02);
 }
 
+/* Reduce space above the first section */
+section:first-of-type {
+    margin-top: 40px !important;
+}
+
 /* Footer styling */
 footer {
     background-color: #005a8d;
