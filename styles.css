@@ -171,3 +171,41 @@ body {
     margin-top: 10px;
     text-align: center;
 }
+
+/* Table styling */
+.styled-table {
+    width: 80%;
+    margin: 20px auto; /* Centers the table */
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9); /* Adds transparency */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table borders */
+.styled-table th, .styled-table td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center; /* Centers text in columns */
+}
+
+/* First column alignment */
+.styled-table td:first-child {
+    text-align: center;
+    vertical-align: middle; /* Centers text vertically */
+}
+
+/* Header styling */
+.styled-table th {
+    background-color: #005a8d;
+    color: white;
+    font-weight: bold;
+}
+
+/* Space above the table */
+.text-section {
+    width: 80%;
+    margin: 40px auto 20px auto; /* Centers text & adds spacing */
+    text-align: justify;
+}
