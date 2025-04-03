@@ -35,25 +35,96 @@
         <p>Você pode adicionar mais conteúdo aqui, como textos, imagens, etc.</p>
     </section>
     
-<table>
-    <thead>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Estruturada de Demências</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background: #005a8d;
+            color: white;
+            text-align: center;
+        }
+        td {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <table>
         <tr>
-            <th>Critério</th>
-            <th>Descrição</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Critério 1</td>
-            <td>Descrição do critério 1</td>
+            <th>Categoria</th>
+            <th>Conteúdo</th>
         </tr>
         <tr>
-            <td>Critério 2</td>
-            <td>Descrição do critério 2</td>
+            <td>S</td>
+            <td>
+                • Registo de sintomas de perda de memória e evolução temporal.<br>
+                • Registo de antecedentes psiquiátricos, alterações psicológicas e comportamentais.<br>
+                • História familiar de demências.<br>
+                • Comorbilidades e fatores de risco cardiovasculares.<br>
+                • Consumo álcool, tabaco e outras drogas.<br>
+                • Consumo fármacos com efeitos prejudiciais na cognição.<br>
+                • Profissão, nível de escolaridade e contexto social.
+            </td>
         </tr>
-        <!-- Continue adding rows as needed -->
-    </tbody>
-</table>
+        <tr>
+            <td>O</td>
+            <td>
+                • Quem acompanha o utente à consulta/Cuidador.<br>
+                • TA; IMC; Exame neurológico sumário.<br>
+                • Resultado escala de avaliação cognitiva: Mini-Cog, MMSE, MoCA.<br>
+                • Resultado escala de avaliação das AVD: Lawton & Brody.<br>
+                • Resultado escala depressão geriátrica (se necessário).<br>
+                • Avaliação da capacidade de condução e impacto no cuidador.
+            </td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>
+                • Alteração de memória (ICPC-2 P20) (Declínio cognitivo ligeiro).<br>
+                • Demência (ICPC2 P70) (colocar etiologia, se soubermos, e grau de gravidade).<br>
+                • Codificar diagnósticos diferenciais (Delirium, Depressão).<br>
+                • Codificar Comorbilidades (HTA, Diabetes, Tabagismo, AVC, Obesidade, etc.).
+            </td>
+        </tr>
+        <tr>
+            <td>P</td>
+            <td>
+                • Plano de ação – exames analíticos, ECG e TAC CE.<br>
+                • Gestão das comorbilidades.<br>
+                • Reconciliação e ajuste terapêutico.<br>
+                • Vacinação – anti-gripal, anti-COVID 19, anti-pneumocócica.<br>
+                • Orientação familiar e social.<br>
+                • Canais de comunicação – email, telefone, videoconsulta, consulta presencial.<br>
+                • Marcação de nova consulta.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
 
     
     <footer>
