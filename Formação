@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mim@uf - Projeto Demências</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Projeto Demências - ULS Loures-Odivelas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="mim@uf.html">mim@uf</a>
+                        <a href="SClinicoMed.html">SClínico Med</a>
+                        <a href="SClinicoEnf.html">SClínico Enf</a>
+                        <a href="FerramentasDeAvaliacao.html">Ferramentas de avaliação</a>
+                        <a href="CriteriosDeReferenciacao.html">Critérios de referenciação</a>
+                        <a href="Vacinacao.html">Vacinação</a>
+                        <a href="Cuidador.html">Cuidador</a>
+                        <a href="ProtecaoSocial.html">Proteção social e recursos na comunidade</a>
+                        <a href="Formacao.html">Formação</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
 <section>
   <h2>Formação em Demência</h2>
   <p>Esta página reúne cursos e recursos de formação destinados a profissionais de saúde na área das demências, com foco em formação gratuita ou com forte componente educativa.</p>
