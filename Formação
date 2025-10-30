@@ -1,1 +1,37 @@
-Página extra
+<section>
+  <h2>Formação em Demência</h2>
+  <p>Esta página reúne cursos e recursos de formação destinados a profissionais de saúde na área das demências, com foco em formação gratuita ou com forte componente educativa.</p>
+
+  <h3>Online Gratuito</h3>
+  <ul>
+    <li>
+      <strong>Curso de competências de cuidados – Cuidados com a demência</strong> (Alison)  
+      — Curso online gratuito que aborda competências básicas para cuidados a pessoas com demência. :contentReference[oaicite:0]{index=0}  
+    </li>
+    <li>
+      <strong>Tratamento e gestão da demência</strong> (Alison)  
+      — Curso online gratuito com certificado (nível intermédio). :contentReference[oaicite:1]{index=1}  
+    </li>
+    <li>
+      <strong>Gestão segura do medicamento</strong> — Modalidade online (Portal Gov.pt / Oferta Formativa para cuidadores informais e profissionais). :contentReference[oaicite:2]{index=2}  
+    </li>
+  </ul>
+
+  <h3>Presencial ou Convite Especial / Online Presencial</h3>
+  <ul>
+    <li>
+      <strong>Curso intensivo – Estratégias não farmacológicas na prevenção do declínio cognitivo</strong>  
+      — Curso presencial ou misto promovido pelo Instituto de Saúde Pública da Universidade do Porto (ISPUP). :contentReference[oaicite:3]{index=3}  
+    </li>
+    <li>
+      <strong>Curso online / presencial “Cuidados paliativos na pessoa com demência”</strong> — Associação Portuguesa de Cuidados Paliativos (APCP). :contentReference[oaicite:4]{index=4}  
+    </li>
+  </ul>
+
+  <h3>Organizações com Formação Relevante</h3>
+  <ul>
+    <li><a href="https://www.ordemenfermeiros.pt" target="_blank">Ordem dos Enfermeiros</a></li>
+    <li><a href="https://www.dgs.pt" target="_blank">Direção-Geral da Saúde (DGS)</a></li>
+    <li><a href="https://alzheimerportugal.org" target="_blank">Alzheimer Portugal</a></li>
+  </ul>
+</section>
