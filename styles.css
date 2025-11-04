@@ -266,3 +266,83 @@ section.courses {
     background-color: #0066cc;
 }
 
+/* === AJUSTES RESPONSIVOS PARA MOBILE === */
+@media (max-width: 768px) {
+
+    /* Reduz o tamanho do cabeçalho e títulos */
+    header {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    nav a, .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        border-radius: 0;
+    }
+
+    /* Melhora a leitura das secções */
+    section {
+        margin: 100px 15px 40px 15px !important;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Garante que as imagens não ultrapassam o ecrã */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Corrige as tabelas e mantém legibilidade */
+    .styled-table {
+        width: 100%;
+        font-size: 14px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    /* Corrige a apresentação dos cartões de cursos */
+    .course-card {
+        margin: 15px 0;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .course-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Ajuste adicional para ecrãs muito pequenos (telemóveis antigos) */
+@media (max-width: 480px) {
+    header {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    section {
+        margin-top: 120px !important;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
+
