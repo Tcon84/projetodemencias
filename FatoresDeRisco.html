@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatores de Risco Modificáveis - Projeto Demências</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Projeto Demências - ULS Loures-Odivelas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="mim@uf.html">mim@uf</a>
+                        <a href="SClinicoMed.html">SClínico Med</a>
+                        <a href="SClinicoEnf.html">SClínico Enf</a>
+                        <a href="FerramentasDeAvaliacao.html">Ferramentas de avaliação</a>
+                        <a href="CriteriosDeReferenciacao.html">Critérios de referenciação</a>
+                        <a href="Vacinacao.html">Vacinação</a>
+                        <a href="Cuidador.html">Cuidador</a>
+                        <a href="ProtecaoSocial.html">Proteção social e recursos na comunidade</a>
+                        <a href="Formacao.html">Formação</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Fatores de Risco Modificáveis</h2>
+        <p>Esta infografia apresenta os principais fatores de risco modificáveis associados ao desenvolvimento de demência e destaca a importância da prevenção e intervenção precoce.</p>
+        
+        <!-- Aqui entra a tua infografia -->
+        <div class="infografia">
+            <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demência: 45% do Risco é Controlável</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+   
+    <!--
+    Plano da Narrativa:
+    1. Gancho (A Crise): Números principais e a mensagem central.
+    2. O Problema (Prevalência e Causas): Detalhar números globais e nacionais.
+    3. O "Porquê" (Fardo e Limites): Fardo elevado e limitação dos tratamentos.
+    4. A Esperança (Potencial de Prevenção): Estatística de "45% prevenível".
+    5. O "Como" (14 Fatores de Risco): Detalhar os 14 fatores de risco modificáveis + Aconselhamento Gemini.
+    6. A Estratégia (Brain Health Check-up): O fluxo de 4 passos nos Cuidados de Saúde Primários.
+    7. A Conclusão: O Imperativo da Intervenção Multicomponente.
+    -->
+   
+    <!--
+    Princípios de Visualização:
+    - Uso exclusivo de Tailwind CSS, Chart.js, e elementos HTML/CSS/JS base.
+    - Ausência de SVG, Mermaid ou imagens externas (exceto placehold.co se estritamente necessário).
+    - Design totalmente responsivo.
+    -->
+   
+    <!-- Paleta de Cores: Brilliant Blues (#004AAD, #0094FF, #5BC9F9, #B3E5FC, #F0F9FF) -->
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0F9FF; /* Fundo muito claro */
+            color: #1a202c;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .stat-card {
+            background-color: white;
+            border-radius: 0.75rem; /* Mais arredondado */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra mais suave */
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px); /* Elevação maior */
+        }
+        .risk-factor-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+            padding: 1rem;
+            border-left-width: 6px; /* Borda mais grossa */
+            border-color: #0094FF;
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .flow-step {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            text-align: center;
+            border: 2px solid #B3E5FC; /* Borda visível */
+            width: 100%;
+            max-width: 200px;
+            min-height: 200px; /* Altura mínima para uniformidade */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (min-width: 1024px) {
+            .flow-step {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 md:p-10">
+       
+        <header class="text-center mb-12 py-8 bg-white rounded-xl shadow-lg">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#004AAD] mb-2">Demência: 45% do Risco é Controlável</h1>
+            <p class="text-xl text-gray-600 font-light">O seu guia para a prevenção e saúde cerebral.</p>
+        </header>
+
+        <section id="prevalencia" class="mb-16">
+            <h2 class="text-3xl font-bold text-[#004AAD] text-center mb-8">A Crise em Números: Prevalência Global</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-12">
+                A demência é um dos maiores desafios de saúde do nosso tempo, impulsionada pelo envelhecimento da população. Os números atuais já são altos e as projeções futuras exigem uma ação imediata.
+            </p>
+           
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               
+                <div class="stat-card lg:col-span-2">
+                    <h3 class="text-xl font-semibold text-[#004AAD] mb-2">Projeção Global de Casos de Demência</h3>
+                    <p class="text-gray-600 mb-4">O número de pessoas com demência deverá quase triplicar até 2050, passando de 57 milhões em 2019 para 153 milhões.</p>
+                    <div class="chart-container" style="height: 300px; max-height: 350px;">
+                        <canvas id="globalProjectionChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <h3 class="text-xl font-semibold text-[#004AAD] mb-2">Prevalência por Idade</h3>
+                    <p class="text-gray-600 mb-4">O risco aumenta drasticamente com a idade, afetando mais de um terço das pessoas com 90 anos ou mais.</p>
+                    <div class="chart-container" style="height: 300px; max-height: 350px;">
+                        <canvas id="agePrevalenceChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card md:col-span-2">
+                    <h3 class="text-xl font-semibold text-[#004AAD] mb-2">Causas Mais Comuns</h3>
+                    <p class="text-gray-600 mb-4">A Doença de Alzheimer é a causa mais frequente, respondendo pela grande maioria dos casos de demência.</p>
+                    <div class="chart-container" style="height: 300px; max-height: 350px;">
+                        <canvas id="causesChart"></canvas>
+                    </div>
+                </div>
+               
+                <div class="stat-card lg:col-span-2">
+                    <h3 class="text-xl font-semibold text-[#004AAD] mb-4">Panorama Global e Nacional</h3>
+                    <p class="text-gray-600 mb-6">O impacto é global. Enquanto a projeção mundial atinge 153 milhões, vários países enfrentam aumentos dramáticos de casos.</p>
+                   
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                        <div>
+                            <span class="text-5xl font-bold text-[#0094FF] block">153 Milhões</span>
+                            <p class="text-gray-600 mt-2 text-sm">Casos Projetados Mundialmente (2050)</p>
+                        </div>
+                        <div>
+                            <span class="text-5xl font-bold text-[#0094FF] block">200 Mil</span>
+                            <p class="text-gray-600 mt-2 text-sm">Casos estimados em Portugal (2018)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="porque-prevenir" class="mb-16">
+            <h2 class="text-3xl font-bold text-[#004AAD] text-center mb-8">Porque a Prevenção é a Nossa Melhor Ferramenta</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-12">
+                A demência impõe um fardo enorme aos pacientes, cuidadores e sistemas de saúde. Com tratamentos curativos limitados, o foco deve mudar para a prevenção.
+            </p>
+           
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="stat-card text-center p-6 sm:p-8">
+                    <span class="text-5xl font-extrabold text-[#004AAD] block">40%</span>
+                    <p class="text-lg text-gray-700 mt-3">Dos cuidadores relatam sintomas depressivos, e 30% sentem-se completamente sobrecarregados.</p>
+                </div>
+                <div class="stat-card text-center p-6 sm:p-8">
+                    <span class="text-3xl font-extrabold text-[#004AAD] block">Custos Elevados</span>
+                    <p class="text-lg text-gray-700 mt-3">O aumento de casos gera custos económicos e sociais que exigem uma resposta urgente dos sistemas de saúde.</p>
+                </div>
+                <div class="stat-card text-center p-6 sm:p-8">
+                    <span class="text-3xl font-extrabold text-[#004AAD] block">Tratamentos Limitados</span>
+                    <p class="text-lg text-gray-700 mt-3">As terapias atuais são sintomáticas e não revertem a progressão da doença, tornando a prevenção crucial.</p>
+                </div>
+            </div>
+
+            <div class="stat-card text-center p-8 md:p-12 bg-gradient-to-r from-[#004AAD] to-[#0094FF] text-white">
+                <h3 class="text-4xl font-extrabold mb-4">A Janela da Esperança: 45%</h3>
+                <p class="text-xl max-w-2xl mx-auto mb-6">
+                    Estima-se que até 45% (quase metade) de todos os casos de demência poderiam ser teoricamente prevenidos ou atrasados ao abordar fatores de risco modificáveis ao longo da vida.
+                </p>
+                <div class="chart-container" style="height: 300px; max-height: 350px;">
+                    <canvas id="preventionPotentialChart"></canvas>
+                </div>
+            </div>
+        </section>
+       
+        <section id="como-prevenir" class="mb-16">
+            <h2 class="text-3xl font-bold text-[#004AAD] text-center mb-8">Como Prevenir: 14 Fatores de Risco Modificáveis</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8">
+                A Comissão Lancet 2024 identificou 14 fatores de risco onde a intervenção pode ter o maior impacto. Nunca é demasiado cedo ou demasiado tarde para começar a proteger a saúde do seu cérebro.
+            </p>
+
+            <div>
+                <h3 class="text-2xl font-semibold text-[#004AAD] mb-4">Domínios de Intervenção Chave</h3>
+               
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Saúde Vascular e Metabólica</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🩺</span><span class="font-semibold">Hipertensão</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🍔</span><span class="font-semibold">Obesidade</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🩸</span><span class="font-semibold">Diabetes Mellitus</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🥓</span><span class="font-semibold">Colesterol LDL Elevado</span></div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Estilo de Vida e Comportamental</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🏃</span><span class="font-semibold">Inatividade Física</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🚬</span><span class="font-semibold">Tabagismo</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🍺</span><span class="font-semibold">Consumo Excessivo de Álcool</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🤕</span><span class="font-semibold">Traumatismo Craniano</span></div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Psicossocial e Sensorial</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🎓</span><span class="font-semibold">Baixa Escolaridade</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">👂</span><span class="font-semibold">Perda Auditiva</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">👓</span><span class="font-semibold">Défice Visual</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">😔</span><span class="font-semibold">Depressão</span></div>
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">🗣️</span><span class="font-semibold">Isolamento Social</span></div>
+                    </div>
+                </div>
+
+                 <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Ambiental</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="risk-factor-card"><span class="text-2xl mr-3">💨</span><span class="font-semibold">Poluição Atmosférica</span></div>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Gemini API Feature 1: Risk Factor Deep Dive -->
+            <div class="stat-card mt-10 p-6">
+                <h3 class="text-2xl font-bold text-[#004AAD] mb-4 flex items-center">
+                    Ações Preventivas Detalhadas ✨
+                </h3>
+                <p class="text-gray-600 mb-4">Selecione um fator de risco para obter as recomendações mais recentes e baseadas em evidências sobre como o gerir ou mitigar (Powered by Gemini Search).</p>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-4">
+                    <select id="riskFactorSelect" class="p-3 border border-gray-300 rounded-lg w-full md:w-2/3 focus:outline-none focus:ring-2 focus:ring-[#0094FF]">
+                        <option value="">Selecione um Fator de Risco...</option>
+                        <option value="Hipertensão">Hipertensão (PA ≤ 130 mmHg)</option>
+                        <option value="Obesidade na Meia-Idade">Obesidade na Meia-Idade</option>
+                        <option value="Diabetes Mellitus">Diabetes Mellitus (Controlo Glicémico)</option>
+                        <option value="Colesterol LDL Elevado">Colesterol LDL Elevado</option>
+                        <option value="Inatividade Física">Inatividade Física (150 min/semana)</option>
+                        <option value="Tabagismo">Tabagismo (Cessação)</option>
+                        <option value="Consumo Excessivo de Álcool">Consumo Excessivo de Álcool</option>
+                        <option value="Traumatismo Cranioencefálico (TCE)">Traumatismo Cranioencefálico (Prevenção)</option>
+                        <option value="Baixa Escolaridade">Baixa Escolaridade (Atividade Cognitiva)</option>
+                        <option value="Perda Auditiva não corrigida">Perda Auditiva não corrigida (Rastreio e Tratamento)</option>
+                        <option value="Défice Visual não corrigido">Défice Visual não corrigido (Rastreio e Tratamento)</option>
+                        <option value="Depressão">Depressão (Tratamento Eficaz)</option>
+                        <option value="Isolamento Social">Isolamento Social (Participação Comunitária)</option>
+                        <option value="Poluição Atmosférica">Poluição Atmosférica (Redução da Exposição)</option>
+                    </select>
+                    <button id="generateAdviceButton" class="w-full md:w-1/3 bg-[#0094FF] text-white p-3 rounded-lg font-semibold hover:bg-[#004AAD] transition-colors">
+                        Obter Aconselhamento ✨
+                    </button>
+                </div>
+                <div id="adviceOutput" class="mt-4 p-4 border border-[#B3E5FC] rounded-lg bg-[#F0F9FF] min-h-[100px] text-gray-700">
+                    <p>Aguardando a seleção de um fator de risco...</p>
+                </div>
+                <div id="adviceCitations" class="text-xs text-gray-500 mt-2"></div>
+            </div>
+            <!-- End Gemini API Feature 1 -->
+
+        </section>
+
+        <section id="estrategia" class="mb-16">
+            <h2 class="text-3xl font-bold text-[#004AAD] text-center mb-8">A Estratégia: O "Brain Health Check-up"</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-12">
+                Os Cuidados de Saúde Primários (CSP) são fundamentais para implementar a prevenção. A proposta de um "Check-up de Saúde Cerebral" visa integrar esta abordagem na rotina clínica a partir dos 50 anos.
+            </p>
+
+            <!-- NOVO FLUXO DE 4 PASSOS -->
+            <div class="flex flex-col lg:flex-row items-stretch justify-center space-y-6 lg:space-y-0 lg:space-x-4">
+               
+                <!-- Passo 1: Revisão dos fatores de risco e cálculo do LIBRA 2 - LINK ADICIONADO AQUI -->
+                <div class="flow-step">
+                    <span class="text-4xl mb-2">1️⃣</span>
+                    <h4 class="text-lg font-semibold text-[#004AAD] my-2 flex flex-col items-center">
+                        Revisão de Risco & LIBRA 2
+                        <a href="https://www.evidencio.com/models/show/1041?utm_source=chatgpt.com" target="_blank" class="text-sm font-normal text-[#0094FF] hover:underline flex items-center mt-1">
+                            Calcular LIBRA Score 🔗
+                        </a>
+                    </h4>
+                    <p class="text-gray-600 text-sm flex-grow">Medição de parâmetros biométricos (PA, IMC) e avaliação do estilo de vida para cálculo e estratificação do risco (Ex: Índice LIBRA 2).</p>
+                </div>
+               
+                <div class="text-4xl text-[#0094FF] self-center transform rotate-90 lg:rotate-0 hidden lg:block">→</div>
+                <div class="text-4xl text-[#0094FF] self-center lg:hidden">▼</div>
+
+
+                <!-- Passo 2: Avaliação Cognitiva Breve -->
+                <div class="flow-step">
+                    <span class="text-4xl mb-2">2️⃣</span>
+                    <h4 class="text-lg font-semibold text-[#004AAD] my-2">Avaliação Cognitiva Breve</h4>
+                    <p class="text-gray-600 text-sm flex-grow">Rastreio de perdas sensoriais (audição, visão) e screening cognitivo inicial para detetar queixas precoces (Ex: Mini-Cog, MoCA).</p>
+                </div>
+               
+                <div class="text-4xl text-[#0094FF] self-center transform rotate-90 lg:rotate-0 hidden lg:block">→</div>
+                <div class="text-4xl text-[#0094FF] self-center lg:hidden">▼</div>
+               
+                <!-- Passo 3: Educação e aconselhamento -->
+                <div class="flow-step">
+                    <span class="text-4xl mb-2">3️⃣</span>
+                    <h4 class="text-lg font-semibold text-[#004AAD] my-2">Educação e Aconselhamento</h4>
+                    <p class="text-gray-600 text-sm flex-grow">Fornecer feedback individualizado sobre o risco e as áreas prioritárias a melhorar, capacitando o utente a gerir a sua saúde cerebral.</p>
+                </div>
+               
+                <div class="text-4xl text-[#0094FF] self-center transform rotate-90 lg:rotate-0 hidden lg:block">→</div>
+                <div class="text-4xl text-[#0094FF] self-center lg:hidden">▼</div>
+
+                <!-- Passo 4: Plano de Ação Multidisciplinar -->
+                <div class="flow-step">
+                    <span class="text-4xl mb-2">4️⃣</span>
+                    <h4 class="text-lg font-semibold text-[#004AAD] my-2">Plano de Ação Multidisciplinar</h4>
+                    <p class="text-gray-600 text-sm flex-grow">Desenvolver um plano de intervenção multicomponente (dieta, exercício, controlo vascular) com apoio multidisciplinar e monitorização contínua.</p>
+                </div>
+            </div>
+            <!-- FIM DO NOVO FLUXO -->
+        </section>
+       
+        <section id="conclusao" class="mb-12">
+            <div class="stat-card p-8 bg-gray-50 border-t-4 border-[#004AAD]">
+                <h2 class="text-3xl font-bold text-[#004AAD] text-center mb-6">Conclusão: O Imperativo da Intervenção Multicomponente</h2>
+
+                <p class="text-lg text-gray-700 max-w-4xl mx-auto text-center mb-4">
+                    Face ao fardo epidemiológico e económico crescente da demência, impulsionado pelo envelhecimento populacional, a prevenção representa a estratégia mais robusta e urgente. A falta de terapêuticas curativas eficazes exige a otimização da reserva cognitiva e a proteção da saúde vascular cerebral.
+                </p>
+                <p class="text-lg text-gray-700 max-w-4xl mx-auto text-center font-extrabold text-[#0094FF]">
+                    Ao intervir nos 14 fatores de risco modificáveis ao longo da vida, é possível prevenir ou adiar aproximadamente 45% dos casos. A implementação sistemática de uma abordagem multicomponente, integrada nos Cuidados de Saúde Primários (CSP), é fundamental para maximizar os anos de vida saudável e a dignidade.
+                </p>
+             </div>
+        </section>
+
+        <footer class="text-center text-gray-500 text-sm mt-12 py-4 border-t border-gray-200">
+            <p>Infográfico gerado com base no "Relatório: O Imperativo da Prevenção da Demência".</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Funções Auxiliares para Chart.js
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            } else {
+                return label;
+            }
+        };
+       
+        const wrapLabels = (label, maxWidth = 16) => {
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const palette = {
+            darkBlue: '#004AAD',
+            brightBlue: '#0094FF',
+            mediumBlue: '#5BC9F9',
+            lightBlue: '#B3E5FC',
+            bgBlue: '#F0F9FF',
+            gray: '#4A5568'
+        };
+
+        // Opções globais para gráficos de barras/linhas
+        const globalChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#1a202c',
+                        font: { size: 14 }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    ticks: { color: palette.gray },
+                    grid: { display: false }
+                },
+                y: {
+                    ticks: { color: palette.gray },
+                    grid: { color: '#E2E8F0' }
+                }
+            }
+        };
+
+        // Opções globais para gráficos circulares (Donut/Doughnut)
+        const globalPieOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: '#1a202c',
+                        padding: 20,
+                        font: { size: 12 }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. Projeção Global de Casos de Demência (Gráfico de Linha)
+            new Chart(document.getElementById('globalProjectionChart'), {
+                type: 'line',
+                data: {
+                    labels: ['2019', '2050'],
+                    datasets: [{
+                        label: 'Milhões de Casos',
+                        data: [57, 153],
+                        borderColor: palette.brightBlue,
+                        backgroundColor: 'rgba(0, 148, 255, 0.15)',
+                        fill: true,
+                        tension: 0.2,
+                        borderWidth: 3,
+                        pointBackgroundColor: palette.brightBlue,
+                        pointRadius: 6,
+                        pointHoverRadius: 8
+                    }]
+                },
+                options: { ...globalChartOptions }
+            });
+
+            // 2. Prevalência por Idade (Gráfico de Barras)
+            new Chart(document.getElementById('agePrevalenceChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['65-70 anos', '90+ anos', '65+ (Geral)'],
+                    datasets: [{
+                        label: 'Prevalência (%)',
+                        data: [3, 35, 10],
+                        backgroundColor: [palette.lightBlue, palette.darkBlue, palette.mediumBlue],
+                        borderColor: [palette.lightBlue, palette.darkBlue, palette.mediumBlue],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    ...globalChartOptions,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { callbacks: { title: tooltipTitleCallback } }
+                    }
+                }
+            });
+
+            // 3. Causas Mais Comuns (Gráfico de Rosca)
+            new Chart(document.getElementById('causesChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        wrapLabels('Doença de Alzheimer (60-80%)'),
+                        wrapLabels('Demência Vascular (5-10%)'),
+                        wrapLabels('Corpos de Lewy (~5%)'),
+                        wrapLabels('Degeneração Frontotemporal (~3%)'),
+                        'Outras'
+                    ],
+                    datasets: [{
+                        label: 'Causas de Demência',
+                        data: [70, 7.5, 5, 3, 14.5],
+                        backgroundColor: [palette.darkBlue, palette.brightBlue, palette.mediumBlue, palette.lightBlue, palette.gray],
+                        hoverOffset: 8
+                    }]
+                },
+                options: {
+                    ...globalPieOptions,
+                    plugins: {
+                        ...globalPieOptions.plugins,
+                        legend: {
+                            ...globalPieOptions.plugins.legend,
+                            position: 'right',
+                            align: 'center'
+                        }
+                    }
+                }
+            });
+           
+            // 4. Potencial de Prevenção (Gráfico de Rosca Grande)
+            new Chart(document.getElementById('preventionPotentialChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Potencialmente Prevenível (45%)', 'Não Modificável (55%)'],
+                    datasets: [{
+                        data: [45, 55],
+                        backgroundColor: [palette.mediumBlue, palette.lightBlue],
+                        borderColor: ['white', 'white'],
+                        borderWidth: 5,
+                        hoverOffset: 12
+                    }]
+                },
+                options: {
+                    ...globalPieOptions,
+                    plugins: {
+                        ...globalPieOptions.plugins,
+                        legend: {
+                            ...globalPieOptions.plugins.legend,
+                            labels: {
+                                ...globalPieOptions.plugins.legend.labels,
+                                color: '#FFFFFF'
+                            }
+                        }
+                    },
+                    cutout: '70%' // Donut mais estreito
+                }
+            });
+
+            // --- Gemini API Implementations ---
+
+            const apiKey = "";
+            const LLM_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+            // Helper for exponential backoff
+            const fetchWithRetry = async (url, options, retries = 3) => {
+                for (let i = 0; i < retries; i++) {
+                    try {
+                        const response = await fetch(url, options);
+                        if (response.status === 429 && i < retries - 1) {
+                            console.warn(`Retry attempt ${i + 1} for 429.`);
+                            await new Promise(resolve => setTimeout(resolve, Math.pow(2, i) * 1000 + Math.random() * 1000));
+                            continue;
+                        }
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        return response;
+                    } catch (error) {
+                        if (i === retries - 1) {
+                            throw error;
+                        }
+                    }
+                }
+            };
+           
+            // --- Feature 1: Risk Factor Deep Dive (Search Grounding) ---
+
+            const adviceSelect = document.getElementById('riskFactorSelect');
+            const generateButton = document.getElementById('generateAdviceButton');
+            const adviceOutput = document.getElementById('adviceOutput');
+            const adviceCitations = document.getElementById('adviceCitations');
+
+            const callGeminiApiForText = async (query) => {
+                const systemPrompt = "Aja como um especialista em saúde cerebral e prevenção de demência. Forneça uma resposta concisa de 2-3 parágrafos, focada em ações práticas e baseadas em evidências para mitigar o seguinte fator de risco, incluindo metas concretas (ex: PA < 130 mmHg). Utilize as fontes de pesquisa disponíveis.";
+               
+                const payload = {
+                    contents: [{
+                        parts: [
+                            { text: query },
+                            { text: "Responda em Português de Portugal. Formate a resposta usando parágrafos e negrito para destacar metas ou recomendações chave." }
+                        ]
+                    }],
+                    tools: [{ "google_search": {} }],
+                    systemInstruction: {
+                        parts: [{ text: systemPrompt }]
+                    },
+                };
+
+                const options = {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                };
+
+                try {
+                    const response = await fetchWithRetry(LLM_API_URL, options);
+                    const result = await response.json();
+                    const candidate = result.candidates?.[0];
+
+                    if (candidate && candidate.content?.parts?.[0]?.text) {
+                        const text = candidate.content.parts[0].text;
+                        let sources = [];
+                        const groundingMetadata = candidate.groundingMetadata;
+                        if (groundingMetadata && groundingMetadata.groundingAttributions) {
+                            sources = groundingMetadata.groundingAttributions
+                                .map(attribution => ({
+                                    uri: attribution.web?.uri,
+                                    title: attribution.web?.title,
+                                }))
+                                .filter(source => source.uri && source.title);
+                        }
+                        return { text, sources };
+                    } else {
+                        return { text: "Erro: Não foi possível obter aconselhamento detalhado. Tente novamente.", sources: [] };
+                    }
+                } catch (error) {
+                    console.error("Gemini API Error:", error);
+                    return { text: "Ocorreu um erro ao comunicar com a API. Por favor, verifique a sua ligação ou tente mais tarde.", sources: [] };
+                }
+            };
+
+            generateButton.addEventListener('click', async () => {
+                const factor = adviceSelect.value;
+                if (!factor) {
+                    adviceOutput.innerHTML = '<p class="text-red-600">Por favor, selecione um fator de risco na lista.</p>';
+                    adviceCitations.innerHTML = '';
+                    return;
+                }
+
+                adviceOutput.innerHTML = '<p class="text-center text-[#004AAD] font-semibold flex items-center justify-center"><span class="animate-spin mr-2">⟳</span> A gerar o aconselhamento mais recente para ' + factor + '...</p>';
+                adviceCitations.innerHTML = '';
+                generateButton.disabled = true;
+
+                const query = `Forneça ações práticas de prevenção de demência focadas no fator de risco: ${factor}.`;
+                const { text, sources } = await callGeminiApiForText(query);
+
+                // Substitui quebras de linha duplas por novos parágrafos HTML e simples por <br>
+                const formattedText = text
+                    .split('\n\n')
+                    .map(p => `<p class="mb-3">${p.replace(/\n/g, ' ')}</p>`)
+                    .join('');
+
+                adviceOutput.innerHTML = formattedText;
+               
+                if (sources.length > 0) {
+                    const sourceHtml = 'Fontes (clique para detalhes): ' + sources.map((s, index) =>
+                        `<a href="${s.uri}" target="_blank" class="text-[#0094FF] hover:underline">${s.title} (${index + 1})</a>`
+                    ).join(' | ');
+                    adviceCitations.innerHTML = sourceHtml;
+                } else {
+                    adviceCitations.innerHTML = 'Nenhuma fonte específica encontrada pela pesquisa.';
+                }
+
+                generateButton.disabled = false;
+            });
+           
+            // TTS related functions and variables were fully removed to clean up the code.
+        });
+    </script>
+</body>
+</html>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ULS Loures-Odivelas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
