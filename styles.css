@@ -113,7 +113,7 @@ section {
 }
 
 section:hover {
-    transform: scale(1.02);
+    transform: none;
 }
 
 /* Reduce space above the first section */
@@ -368,6 +368,58 @@ section.courses {
 .infoblock h3 {
     color: #005a8d;
     margin-bottom: 10px;
+}
+/* === ESTILOS PARA A PÁGINA INVESTIGAÇÃO === */
+
+.resource-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 25px;
+}
+
+.resource-list li {
+    background-color: #ffffff;
+    border-left: 5px solid #005a8d;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-list li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.resource-list strong {
+    color: #004080;
+    font-size: 17px;
+}
+
+.article-title {
+    font-style: italic;
+    color: #333;
+}
+
+.resource-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #005a8d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resource-link:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes mobile */
+@media (max-width: 768px) {
+    .resource-list li {
+        padding: 15px;
+        font-size: 15px;
+    }
 }
 
 
