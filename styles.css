@@ -422,21 +422,38 @@ section.courses {
     }
 }
 .search-container {
-    text-align: center;
-    margin: 15px 0;
+    text-align:center;
+    margin:15px;
+    position:relative;
 }
 
-#siteSearch {
-    width: 60%;
-    max-width: 500px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+#globalSearch {
+    width:60%;
+    max-width:500px;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
 }
 
-.highlight {
-    background-color: #fff3a0;
-    padding: 2px;
+#searchResults {
+    background:white;
+    max-width:500px;
+    margin:auto;
+    text-align:left;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    position:absolute;
+    left:0;
+    right:0;
+    z-index:999;
 }
 
+.result-item {
+    padding:10px;
+    border-bottom:1px solid #eee;
+    cursor:pointer;
+}
+
+.result-item:hover {
+    background:#f0f6ff;
+}
