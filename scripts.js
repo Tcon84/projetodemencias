@@ -15,59 +15,44 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 });
-function searchSite() {
 
-    let input = document.getElementById("siteSearch");
-    let filter = input.value.toLowerCase();
+let searchIndex = [];
 
-    removeHighlights();
+fetch("search-data.json")
+.then(response => response.json())
+.then(data => searchIndex = data);
 
-    if (filter.length < 2) return;
+function globalSearch() {
 
-    let content = document.querySelector("section");
+    let input =
+        document.getElementById("globalSearch")
+        .value.toLowerCase();
 
-    highlightText(content, filter);
-}
+    let resultsBox =
+        document.getElementById("searchResults");
 
-function highlightText(element, keyword) {
+    resultsBox.innerHTML = "";
 
-    if (!element) return;
+    if(input.length < 2) return;
 
-    let walker = document.createTreeWalker(
-        element,
-        NodeFilter.SHOW_TEXT,
-        null,
-        false
+    let results = searchIndex.filter(page =>
+        page.title.toLowerCase().includes(input) ||
+        page.content.toLowerCase().includes(input)
     );
 
-    let node;
-    while(node = walker.nextNode()) {
+    results.forEach(r => {
 
-        if(node.nodeValue.toLowerCase().includes(keyword)) {
+        let div = document.createElement("div");
+        div.className = "result-item";
 
-            let span = document.createElement("span");
-            span.className = "highlight";
+        div.innerHTML =
+            `<strong>${r.title}</strong><br>
+             <small>${r.url}</small>`;
 
-            let regex = new RegExp(`(${keyword})`, "gi");
+        div.onclick = () => {
+            window.location.href = r.url;
+        };
 
-            span.innerHTML =
-                node.nodeValue.replace(regex, "<mark>$1</mark>");
-
-            node.parentNode.replaceChild(span, node);
-        }
-    }
-
-    let first = document.querySelector("mark");
-    if(first){
-        first.scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-        });
-    }
-}
-
-function removeHighlights() {
-    document.querySelectorAll("mark").forEach(el => {
-        el.replaceWith(el.textContent);
+        resultsBox.appendChild(div);
     });
 }
