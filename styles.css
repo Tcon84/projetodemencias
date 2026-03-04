@@ -421,5 +421,22 @@ section.courses {
         font-size: 15px;
     }
 }
+.search-container {
+    text-align: center;
+    margin: 15px 0;
+}
 
+#siteSearch {
+    width: 60%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.highlight {
+    background-color: #fff3a0;
+    padding: 2px;
+}
 
