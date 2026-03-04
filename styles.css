@@ -457,3 +457,37 @@ section.courses {
 .result-item:hover {
     background:#f0f6ff;
 }
+
+/* ===== RESULTADOS DA PESQUISA ===== */
+
+#searchResults {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    position: absolute;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* cada resultado */
+#searchResults div {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+/* links dentro dos resultados */
+#searchResults a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* hover */
+#searchResults div:hover {
+    background-color: #f2f2f2;
+}
