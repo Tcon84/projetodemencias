@@ -18,41 +18,70 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let searchIndex = [];
 
-fetch("search-data.json")
-.then(response => response.json())
-.then(data => searchIndex = data);
+async function buildSearchIndex() {
 
-function globalSearch() {
+    const response = await fetch("pages.json");
+    const pages = await response.json();
 
-    let input =
-        document.getElementById("globalSearch")
-        .value.toLowerCase();
+    for (const page of pages) {
 
-    let resultsBox =
+        try {
+            const res = await fetch(page);
+            const text = await res.text();
+
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(text, "text/html");
+
+            const title =
+                doc.querySelector("h1")?.innerText ||
+                doc.title ||
+                page;
+
+            const content =
+                doc.body.innerText.toLowerCase();
+
+            searchIndex.push({
+                title,
+                url: page,
+                content
+            });
+
+        } catch (error) {
+            console.log("Erro a indexar:", page);
+        }
+    }
+}
+
+function searchSite() {
+
+    const query =
+        document.getElementById("siteSearch")
+        .value
+        .toLowerCase();
+
+    const resultsBox =
         document.getElementById("searchResults");
 
     resultsBox.innerHTML = "";
 
-    if(input.length < 2) return;
+    if (query.length < 2) return;
 
-    let results = searchIndex.filter(page =>
-        page.title.toLowerCase().includes(input) ||
-        page.content.toLowerCase().includes(input)
+    const results = searchIndex.filter(p =>
+        p.content.includes(query)
     );
 
-    results.forEach(r => {
+    results.forEach(result => {
 
-        let div = document.createElement("div");
-        div.className = "result-item";
+        const item = document.createElement("div");
+        item.className = "search-result";
 
-        div.innerHTML =
-            `<strong>${r.title}</strong><br>
-             <small>${r.url}</small>`;
+        item.innerHTML =
+            `<a href="${result.url}">
+                ${result.title}
+            </a>`;
 
-        div.onclick = () => {
-            window.location.href = r.url;
-        };
-
-        resultsBox.appendChild(div);
+        resultsBox.appendChild(item);
     });
 }
+
+buildSearchIndex();
